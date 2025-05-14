@@ -1,0 +1,25 @@
+    <div class="col">
+      <div class="card h-100">
+        <div class="position-relative">
+          <img [src]="productItem.images" class="card-img-top" alt="{{ productItem.title }}">
+          @if (productItem.stock === 0) {
+            <span class="position-absolute top-0 start-0 badge bg-danger m-2">Out of stock</span>
+          } @else {
+            <span class="position-absolute top-0 start-0 badge bg-success m-2">In stock</span>
+          }
+        </div>
+        <div class="card-body d-flex flex-column p-3">
+          <div class="d-flex justify-content-between align-items-center mb-2 bg-light p-2 rounded">
+            <h5 class="card-title mb-0 fs-6">{{ productItem.title }}</h5>
+            <h4 class="mt-auto mb-3">{{ productItem.price | currency:'EGP' }}</h4>
+          </div>
+          
+          <p class="card-text text-muted small mb-2">{{ productItem.category }}</p>
+          
+          <button class="btn btn-primary mt-auto rounded-pill align-self-start px-3 py-1 btn-sm" 
+                  [disabled]="productItem.stock === 0">
+            <i class="bi bi-cart-plus me-1"></i>Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
