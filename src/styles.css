@@ -1,3 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom styles for auth pages */
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  border-color: #86b7fe;
+}
+
+/* Add animation to form inputs */
+.form-control {
+  transition: all 0.3s ease;
+}
+
+/* Social buttons */
+.btn-outline-secondary {
+  transition: all 0.5s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #1273d5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0 15px;
+  }
+}

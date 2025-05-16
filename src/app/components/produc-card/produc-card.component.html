@@ -1,5 +1,5 @@
     <div class="col">
-      <div class="card h-100">
+      <div class="card h-100 product-card" (click)="viewProductDetails(product.id)">
         <div class="position-relative">
           <img [src]="productItem.images" class="card-img-top" alt="{{ productItem.title }}">
           @if (productItem.stock === 0) {

@@ -1,0 +1,47 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+      <div class="card shadow">
+        <div class="card-body p-5">
+          <h2 class="card-title text-center mb-4">Welcome Back</h2>
+          
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            
+            <div class="mb-4">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="••••••••">
+              <div class="form-text text-end">
+                <a routerLink="/forgot-password" class="text-decoration-none">Forgot password?</a>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100 py-2 mb-3">Sign In</button>
+            
+            <div class="text-center">
+              <p class="mb-0">Don't have an account? 
+                <a routerLink="/register" class="text-decoration-none fw-semibold">Sign up</a>
+              </p>
+            </div>
+          </form>
+          
+          <div class="d-flex align-items-center my-4">
+            <hr class="flex-grow-1">
+            <span class="px-3 text-muted">OR</span>
+            <hr class="flex-grow-1">
+          </div>
+          
+          <button class="btn btn-outline-secondary w-100 py-2 mb-2">
+            <i class="bi bi-google me-2"></i> Continue with Google
+          </button>
+          <button class="btn btn-outline-secondary w-100 py-2">
+            <i class="bi bi-facebook me-2"></i> Continue with Facebook
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

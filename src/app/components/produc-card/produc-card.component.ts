@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-produc-card',
@@ -9,4 +10,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ProducCardComponent {
   @Input() productItem: any;
+product: any;
+
+  constructor(private router: Router) {}
+
+  viewProductDetails(productId: number): void {
+  this.router.navigate(['/product', productId]);
+}
 }

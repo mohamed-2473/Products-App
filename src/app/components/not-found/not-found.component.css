@@ -1,0 +1,24 @@
+.container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #dc3545; /* Bootstrap danger color */
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}

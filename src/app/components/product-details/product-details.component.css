@@ -1,0 +1,46 @@
+/* Product Thumbnail */
+.product-thumbnail {
+  height: 400px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+/* Gallery Thumbnails */
+.gallery-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Product Title */
+.product-title {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Price Styling */
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-thumbnail {
+    height: 300px;
+  }
+  
+  .product-actions {
+    flex-direction: column;
+  }
+  
+  .quantity-selector {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}

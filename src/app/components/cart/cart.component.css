@@ -1,0 +1,15 @@
+.empty-cart {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.empty-cart-icon {
+  font-size: 5rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.empty-cart-message {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}

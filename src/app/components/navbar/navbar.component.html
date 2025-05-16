@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
-    <!-- Brand/logo on the left -->
-    <a class="navbar-brand fw-bold" href="#">
+    <!-- Brand/logo with routerLink -->
+    <a class="navbar-brand fw-bold" routerLink="/products">
       Products App
     </a>
     
@@ -13,21 +13,21 @@
     <!-- Navbar items -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <!-- Shopping cart icon -->
+        <!-- Shopping cart icon with routerLink -->
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" routerLink="/cart">
             <i class="bi bi-cart-fill fs-5"></i>
           </a>
         </li>
         
-        <!-- Login link -->
+        <!-- Login link with routerLink -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" routerLink="/login">Login</a>
         </li>
         
-        <!-- Register link with primary button style -->
+        <!-- Register link with routerLink -->
         <li class="nav-item ms-2">
-          <a class="btn btn-primary" href="#">Register</a>
+          <a class="btn btn-primary" routerLink="/register">Register</a>
         </li>
       </ul>
     </div>
