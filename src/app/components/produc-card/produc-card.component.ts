@@ -4,17 +4,18 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-produc-card',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './produc-card.component.html',
-  styleUrl: './produc-card.component.css'
+  styleUrls: ['./produc-card.component.css']
 })
 export class ProducCardComponent {
   @Input() productItem: any;
-product: any;
 
   constructor(private router: Router) {}
 
-  viewProductDetails(productId: number): void {
-  this.router.navigate(['/product', productId]);
-}
+  viewProductDetails(event: Event, productId: number): void {
+    event.stopPropagation();
+    this.router.navigate(['/product', productId]);
+  }
 }

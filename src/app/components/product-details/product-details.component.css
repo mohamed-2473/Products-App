@@ -2,6 +2,7 @@
 .product-thumbnail {
   height: 400px;
   object-fit: contain;
+  background-color: #f8f9fa;
   padding: 20px;
 }
 
@@ -16,6 +17,10 @@
 
 .gallery-thumbnail:hover {
   transform: scale(1.05);
+}
+
+.quantity-selector input {
+  text-align: center;
 }
 
 /* Product Title */
